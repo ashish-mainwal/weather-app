@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+#container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background: black;
+    border-radius: 10px;
+}
+
+#input-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.heading {
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+#input-field {
+    padding: 8px 10px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    flex: 1;       
+    min-width: 0; 
+}
+
+#search-btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(155, 14, 155);
+    color: white;
+    border: none;
+    font-size: 16px;
+    transition: all 0.35s ease;
+    white-space: nowrap;
+}
+
+#search-btn:hover {
+    opacity: 0.8;
+}
+
+.hidden {
+    display: none;
+}
+
+#error-msg {
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+#weather-info {
+    width: 100%;
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#city-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#temperature {
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(155, 14, 155);
+    margin-bottom: 5px;
+}
+
+#description {
+    font-size: 16px;
+    color: #aaaaaa;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 480px) {
+    #container {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    #input-container {
+        flex-direction: column; /* ← stack input and button vertically */
+    }
+
+    #search-btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #input-field {
+        width: 100%;
+        padding: 10px;
+    }
+}
