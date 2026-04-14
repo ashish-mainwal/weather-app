@@ -111,9 +111,6 @@ body {
 
 @media (max-width: 480px) {
 
-    body{
-        background-color: white;
-    }
     #container {
         padding: 15px;
         border-radius: 8px;
